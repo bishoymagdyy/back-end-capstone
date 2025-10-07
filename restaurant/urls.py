@@ -5,7 +5,7 @@ from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('items', views.MenuItemView.as_view()),
+    path('items', views.MenuItemView.as_view(), name='menu-items'),
     path('items/<int:pk>', views.SingleMenuItemView.as_view()),
     path('api-token-auth/', obtain_auth_token),
 ]
