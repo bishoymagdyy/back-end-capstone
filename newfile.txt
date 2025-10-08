@@ -1,2 +1,0 @@
-hello world bisho
-.data[1]['dish'],
